@@ -1,0 +1,11 @@
+# Linux-контейнер Railway: текст должен приходить с LF, иначе Procfile
+# читается как "web: python3 server.py\r" и запуск падает.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.rtf binary

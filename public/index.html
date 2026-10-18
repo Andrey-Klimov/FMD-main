@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FMD — Financial Multiples Database</title>
+  <meta name="description" content="Финансовые показатели российских компаний, мультипликаторы и первоисточники.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="research">
+  <header>
+    <a class="brand" href="#home" aria-label="FMD — главная">FMD<span class="brand-dot">.</span></a>
+    <div class="brand-description"><strong>Financial Multiples Database</strong><span>Данные российских компаний с проверкой по первоисточникам</span></div>
+    <div id="account-control" class="account-control"><a class="button" href="/" >Войти</a></div>
+    <button class="icon-button" id="help" aria-label="О данных">?</button>
+  </header>
+  <main id="app"></main>
+  <footer><span><b>FMD</b> &nbsp; Financial Multiples Database</span><a href="#method">Источники и методология</a></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="info-dialog" aria-labelledby="info-title"><button class="close" aria-label="Закрыть">×</button><h2 id="info-title">О базе FMD</h2><p id="database-info"></p><p>Даты показателей и котировок указаны в интерфейсе. Пропуски обозначены тире. Данные обновляются при загрузке новой версии базы.</p><a href="#method" class="button">Методология</a><button class="primary close-action">Понятно</button></dialog>
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title"></dialog>
+  <script src="/data.js"></script><script src="/export.js"></script><script src="/app.js"></script>
+</body>
+</html>
