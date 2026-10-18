@@ -1,11 +1,14 @@
 """FMD — HTTP-сервер статического сайта.
 
 Отдаёт содержимое `public/` и подменяет авторизацию ChatGPT/Sites,
-которая доступна только на платформе Sites.
+которая доступна только на платформе Cloudflare.
 
-Запуск:  python3 server.py
-Порт:    переменная окружения PORT (Railway) либо 5000 по умолчанию.
-Адрес:   переменная окружения HOST, по умолчанию 0.0.0.0.
+Запуск:  python3 -u server.py
+
+Адрес:  всегда 0.0.0.0. Переменная HOST намеренно игнорируется: если
+        она равна 127.0.0.1, прокси платформы не достучится до сервера и
+        отдаёт 502 с "connection refused".
+Порт:   переменная окружения PORT (её задаёт Railway), иначе 5000.
 """
 from __future__ import annotations
 
@@ -14,6 +17,9 @@ import mimetypes
 import os
 import posixpath
 import shutil
+import socket
+import sys
+import time
 import urllib.parse
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -21,9 +27,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PUBLIC = ROOT / "public"
+INDEX = PUBLIC / "index.html"
 
-HOST = os.environ.get("HOST") or "0.0.0.0"
-PORT = int(os.environ.get("PORT") or "5000")
+# Прокси Railway подключается к контейнеру снаружи, поэтому слушать
+# можно только на всех интерфейсах. 127.0.0.1 здесь гарантированный 502.
+BIND_HOST = "0.0.0.0"
 
 # Стандартная таблица MIME на разных платформах неполна, а тип ответа
 # для .js и .css определяется по-разному в зависимости от версии Python.
@@ -36,6 +44,20 @@ mimetypes.add_type("text/css", ".css")
 
 # Хешированные имена в assets/ и logos/ меняются только при новой сборке.
 IMMUTABLE = ("/assets/", "/logos/")
+
+
+def log(message: str) -> None:
+    print(f"[fmd] {message}", flush=True)
+
+
+def resolve_port() -> int:
+    raw = os.environ.get("PORT")
+    if raw:
+        try:
+            return int(raw)
+        except ValueError:
+            log(f"PORT={raw!r} не число, беру 5000")
+    return 5000
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -77,7 +99,9 @@ class Handler(SimpleHTTPRequestHandler):
 
         if path == "/health":
             self.send_payload(
-                HTTPStatus.OK, json.dumps({"status": "ok"}).encode(), "application/json"
+                HTTPStatus.OK,
+                json.dumps({"status": "ok", "index": INDEX.is_file()}).encode(),
+                "application/json",
             )
             return
 
@@ -104,6 +128,16 @@ class Handler(SimpleHTTPRequestHandler):
             self.end_headers()
             return
 
+        # Папка public не приехала в контейнер: отвечаем внятной страницей
+        # вместо падения, чтобы в браузере было видно настоящую причину.
+        if not INDEX.is_file():
+            self.send_payload(
+                HTTPStatus.SERVICE_UNAVAILABLE,
+                f"FMD: не найден {INDEX}".encode(),
+                "text/plain; charset=utf-8",
+            )
+            return
+
         self.path = "/index.html" if path == "/" else self.path
         source = super().send_head()
         if source is None:
@@ -115,20 +149,44 @@ class Handler(SimpleHTTPRequestHandler):
             source.close()
 
     def log_message(self, fmt, *args):
-        print(f"{self.address_string()} {fmt % args}", flush=True)
+        sys.stdout.write(f"[fmd] {self.address_string()} {fmt % args}\n")
+        sys.stdout.flush()
+
+
+def bind(port: int, attempts: int = 5) -> ThreadingHTTPServer:
+    """Поднимает сервер, повторяя попытку, если порт ещё занят."""
+    for attempt in range(1, attempts + 1):
+        try:
+            return ThreadingHTTPServer((BIND_HOST, port), Handler)
+        except OSError as exc:
+            log(f"не удалось занять {BIND_HOST}:{port} ({exc}), попытка {attempt}/{attempts}")
+            time.sleep(2)
+    raise SystemExit(f"порт {port} занят после {attempts} попыток")
 
 
 def main() -> None:
-    if not (PUBLIC / "index.html").is_file():
-        raise SystemExit(f"Не найден {PUBLIC / 'index.html'} — папка public повреждена.")
+    port = resolve_port()
 
-    server = ThreadingHTTPServer((HOST, PORT), Handler)
+    log(f"python {sys.version.split()[0]}, pid {os.getpid()}")
+    log(f"корень: {ROOT}")
+    log(f"PORT из окружения: {os.environ.get('PORT')!r} -> слушаем {BIND_HOST}:{port}")
+    log(f"HOST из окружения: {os.environ.get('HOST')!r} (игнорируется, нужен {BIND_HOST})")
+    log(f"index.html: {'найден' if INDEX.is_file() else 'ОТСУТСТВУЕТ -> сайт отдаст 503'}")
+
+    server = bind(port)
     server.daemon_threads = True
-    print(f"FMD слушает http://{HOST}:{PORT} (файлы: {PUBLIC})", flush=True)
+
+    # Проверяем, что порт действительно виден снаружи контейнера.
+    with socket.socket() as probe:
+        probe.settimeout(2)
+        reachable = probe.connect_ex((BIND_HOST, port)) == 0
+    log(f"порт {port} {'принимает внешние подключения' if reachable else 'НЕДОСТУПЕН ИЗВНЕ'}")
+
+    log("готов к работе")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        pass
+        log("остановлен")
     finally:
         server.server_close()
 
