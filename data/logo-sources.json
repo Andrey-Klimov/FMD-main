@@ -1,0 +1,223 @@
+{
+  "SNGS": {
+    "file": "SNGS.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.surgutneftegas.ru&sz=128",
+    "website": "https://www.surgutneftegas.ru/",
+    "bytes": 4261,
+    "note": "Official website favicon retrieved from Google favicon cache."
+  },
+  "UGLD": {
+    "file": "UGLD.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=ugold.ru&sz=128",
+    "website": "https://ugold.ru/",
+    "bytes": 2717,
+    "note": "Official website favicon retrieved from Google favicon cache."
+  },
+  "POSI": {
+    "file": "POSI.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ptsecurity_2021.svg",
+    "website": "https://group.ptsecurity.com/ru/",
+    "bytes": 5160,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Ptsecurity_2021.svg"
+  },
+  "VKCO": {
+    "file": "VKCO.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg",
+    "website": "https://vk.company/ru/",
+    "bytes": 847,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:VK_Compact_Logo_%282021-present%29.svg"
+  },
+  "RAGR": {
+    "file": "RAGR.svg",
+    "sourceUrl": "https://ar2024.rusagrogroup.ru/favicon-icons/favicon.svg",
+    "website": "https://www.rusagrogroup.ru/",
+    "bytes": 3180
+  },
+  "AFKS": {
+    "file": "AFKS.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.sistema.ru&sz=128",
+    "website": "https://sistema.ru/",
+    "bytes": 252
+  },
+  "AFLT": {
+    "file": "AFLT.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.aeroflot.ru&sz=128",
+    "website": "https://www.aeroflot.ru/ru-ru",
+    "bytes": 1850,
+    "note": "Official website favicon retrieved from Google favicon cache."
+  },
+  "ALRS": {
+    "file": "ALRS.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=alrosa.ru&sz=128",
+    "website": "https://www.alrosa.ru/",
+    "bytes": 6701
+  },
+  "BSPB": {
+    "file": "BSPB.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.bspb.ru&sz=128",
+    "website": "https://www.bspb.ru/",
+    "note": "Official website favicon retrieved from Google favicon cache.",
+    "bytes": 1152
+  },
+  "CHMF": {
+    "file": "CHMF.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Severstal_logo.svg",
+    "website": "https://severstal.com/rus/",
+    "bytes": 6586
+  },
+  "CNRU": {
+    "file": "CNRU.svg",
+    "sourceUrl": "https://ir.ciangroup.ru/images/icons/favicon.svg",
+    "website": "https://ir.ciangroup.ru/",
+    "bytes": 7625
+  },
+  "ENPG": {
+    "file": "ENPG.png",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/EN%2B_Logo_Rus_color.png",
+    "website": "https://enplusgroup.com/ru/",
+    "bytes": 6883
+  },
+  "FLOT": {
+    "file": "FLOT.svg",
+    "sourceUrl": "https://www.scf-group.ru/bitrix/templates/scf-main/images/logo.svg",
+    "website": "https://www.scf-group.ru/",
+    "bytes": 1913
+  },
+  "GAZP": {
+    "file": "GAZP.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Gazprom_logo.svg",
+    "website": "https://www.gazprom.ru/",
+    "bytes": 4535
+  },
+  "GMKN": {
+    "file": "GMKN.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=nornickel.com&sz=128",
+    "website": "https://www.nornickel.ru/",
+    "bytes": 1262
+  },
+  "HEAD": {
+    "file": "HEAD.png",
+    "sourceUrl": "https://i.hh.ru/apple/hh/touch-icon-ipad-retina.png?v=05022025",
+    "website": "https://hh.ru/",
+    "bytes": 1550
+  },
+  "IRAO": {
+    "file": "IRAO.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.interrao.ru&sz=128",
+    "website": "https://www.interrao.ru/",
+    "bytes": 581,
+    "note": "Official website favicon retrieved from Google favicon cache."
+  },
+  "LENT": {
+    "file": "LENT.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/New_logo_of_Lenta.svg",
+    "website": "https://www.lentagroup.ru/",
+    "bytes": 2893,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:New_logo_of_Lenta.svg"
+  },
+  "LKOH": {
+    "file": "LKOH.png",
+    "sourceUrl": "https://lukoil.ru/Content/favicon.ico",
+    "website": "https://lukoil.ru/",
+    "bytes": 641,
+    "originalFile": "LKOH.ico",
+    "note": "Converted from the downloaded image to PNG without changing the logo."
+  },
+  "MAGN": {
+    "file": "MAGN.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Magnitogorsk_Iron_and_Steel_Works_logo.svg",
+    "website": "https://mmk.ru/ru/",
+    "bytes": 1146,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Magnitogorsk_Iron_and_Steel_Works_logo.svg"
+  },
+  "MDMG": {
+    "file": "MDMG.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=mamadeti.ru&sz=128",
+    "website": "https://www.mcclinics.ru/",
+    "bytes": 1607
+  },
+  "MTSS": {
+    "file": "MTSS.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Logo_%D0%9C%D0%A2%D0%A1_%282023%29.svg",
+    "website": "https://mts.ru/",
+    "bytes": 1868,
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Logo_%D0%9C%D0%A2%D0%A1_%282023%29.svg"
+  },
+  "NLMK": {
+    "file": "NLMK.svg",
+    "sourceUrl": "https://nlmk.com/ru/",
+    "website": "https://nlmk.com/ru/",
+    "bytes": 1415,
+    "note": "Logo SVG extracted verbatim from the official homepage."
+  },
+  "NVTK": {
+    "file": "NVTK.png",
+    "sourceUrl": "https://www.novatek.ru/common/img/logo.png",
+    "website": "https://www.novatek.ru/",
+    "bytes": 19312
+  },
+  "OZON": {
+    "file": "OZON.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=ozon.ru&sz=128",
+    "website": "https://ir.ozon.com/",
+    "bytes": 1993
+  },
+  "PHOR": {
+    "file": "PHOR.png",
+    "sourceUrl": "https://cdn.phosagro.ru/apple-touch-icon.png",
+    "website": "https://www.phosagro.ru/",
+    "bytes": 10997
+  },
+  "PLZL": {
+    "file": "PLZL.svg",
+    "sourceUrl": "https://polyus.com/img/logo_dark_ru.svg",
+    "website": "https://polyus.com/ru/",
+    "bytes": 3758
+  },
+  "ROSN": {
+    "file": "ROSN.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.rosneft.ru&sz=128",
+    "website": "https://www.rosneft.ru/",
+    "bytes": 155,
+    "note": "Official website favicon retrieved from Google favicon cache."
+  },
+  "RTKM": {
+    "file": "RTKM.svg",
+    "sourceUrl": "https://www.company.rt.ru/img/logo/rostelekom-logo-text.svg",
+    "website": "https://www.company.rt.ru/",
+    "bytes": 3412
+  },
+  "RUAL": {
+    "file": "RUAL.svg",
+    "sourceUrl": "https://rusal.ru/",
+    "website": "https://rusal.ru/",
+    "bytes": 4379,
+    "note": "Logo SVG extracted verbatim from the official homepage."
+  },
+  "TATN": {
+    "file": "TATN.svg",
+    "sourceUrl": "https://logo-teka.com/download/logo/9080/svg/?lt_dl_lang=ru",
+    "website": "https://www.tatneft.ru/",
+    "bytes": 1384
+  },
+  "T": {
+    "file": "T.png",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.tbank.ru&sz=128",
+    "website": "https://www.tbank.ru/",
+    "bytes": 6363,
+    "note": "Converted from the downloaded image to PNG without changing the logo.",
+    "originalFile": "T.jpg"
+  },
+  "X5": {
+    "file": "X5.svg",
+    "sourceUrl": "https://www.x5.ru/wp-content/themes/x5/assets/img/favicon/favicon.svg",
+    "website": "https://www.x5.ru/ru/",
+    "bytes": 1382
+  },
+  "YDEX": {
+    "file": "YDEX.png",
+    "sourceUrl": "https://yastatic.net/s3/company-ir/s3/home-static/_/46/462e92b9e3792be37a1c3fdefb26af28.png",
+    "website": "https://yandex.ru/company/",
+    "bytes": 2100
+  }
+}

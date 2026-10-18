@@ -1,0 +1,14 @@
+{
+  "source": "https://www.cbr.ru/scripts/XML_dynamic.asp",
+  "method": "Average of daily effective official rates over calendar days; closing rate for balance-sheet values.",
+  "rates": {
+    "2023": {
+      "average": 85.24663726027397,
+      "closing": 89.6883
+    },
+    "2024": {
+      "average": 92.56517841530055,
+      "closing": 101.6797
+    }
+  }
+}

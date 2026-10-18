@@ -1,0 +1,194 @@
+{
+  "AFKS": {
+    "title": "Финансовые результаты и презентации — АФК «Система»",
+    "url": "https://www.sistema.ru/investors-and-shareholders/financial",
+    "kind": "ir",
+    "external": true
+  },
+  "AFLT": {
+    "title": "Финансовые результаты — Аэрофлот",
+    "url": "https://ir.aeroflot.ru/ru/reporting/financial-results/",
+    "kind": "ir",
+    "external": true
+  },
+  "ALRS": {
+    "title": "Презентации для инвесторов — АЛРОСА",
+    "url": "https://alrosa.ru/investors/events/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "BSPB": {
+    "title": "Презентации — Банк «Санкт-Петербург»",
+    "url": "https://www.bspb.ru/investors/presentations",
+    "kind": "ir",
+    "external": true
+  },
+  "CHMF": {
+    "title": "Финансовые результаты и IR-релизы — Северсталь",
+    "url": "https://www.e-disclosure.ru/portal/files.aspx?id=30&type=10",
+    "kind": "ir",
+    "external": true
+  },
+  "CNRU": {
+    "title": "Финансовые результаты и презентации — Циан",
+    "url": "https://ir.ciangroup.ru/ru/financials/reports-and-presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "ENPG": {
+    "title": "Отчеты и результаты — Эн+",
+    "url": "https://enplusgroup.com/ru/investors/results-and-disclosure/ifrs/",
+    "kind": "ir",
+    "external": true
+  },
+  "FLOT": {
+    "title": "Презентации — Совкомфлот",
+    "url": "https://www.scf-group.ru/en/investors/results_and_publications/Presentations/?year=0",
+    "kind": "ir",
+    "external": true
+  },
+  "GAZP": {
+    "title": "Презентации — Газпром (архив 2021)",
+    "url": "https://www.gazprom.ru/investors/presentations/2021/",
+    "kind": "ir",
+    "external": true
+  },
+  "GMKN": {
+    "title": "Презентации и выступления — Норникель",
+    "url": "https://nornickel.ru/investors/presentations-and-briefings/",
+    "kind": "ir",
+    "external": true
+  },
+  "HEAD": {
+    "title": "Результаты и презентации — Хэдхантер",
+    "url": "https://investor.hh.ru/ru/shareholders-and-investors",
+    "kind": "ir",
+    "external": true
+  },
+  "IRAO": {
+    "title": "Презентация для инвесторов — Интер РАО",
+    "url": "https://www.interrao.ru/upload/docs/Investor%20presentation.pdf",
+    "kind": "ir",
+    "external": true
+  },
+  "LENT": {
+    "title": "Презентация результатов за 2025 год — Лента",
+    "url": "https://www.lentagroup.ru/upload/iblock/bee/zrd3lw4j566ryv2pvloag74v4mjg9w1v/Q4-2025-Lenta-Investor-Presentation_rus_vF.pdf",
+    "kind": "ir",
+    "external": true
+  },
+  "LKOH": {
+    "title": "Финансовые результаты — ЛУКОЙЛ",
+    "url": "https://www.lukoil.com/InvestorAndShareholderCenter/FinancialReports",
+    "kind": "ir",
+    "external": true
+  },
+  "MAGN": {
+    "title": "Материалы для инвесторов — ММК",
+    "url": "https://mmk.ru/ru/investor/",
+    "kind": "ir",
+    "external": true
+  },
+  "MDMG": {
+    "title": "Презентации — Мать и дитя",
+    "url": "https://www.mcclinics.ru/investors/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "MTSS": {
+    "title": "Финансовые результаты и презентации — МТС",
+    "url": "https://ir.mts.ru/investors/financial_center/financial_results",
+    "kind": "ir",
+    "external": true
+  },
+  "NLMK": {
+    "title": "Презентации финансовых результатов — НЛМК",
+    "url": "https://nlmk.com/ru/about/documents/presentations-financial-results/",
+    "kind": "ir",
+    "external": true
+  },
+  "NVTK": {
+    "title": "Финансовые результаты — НОВАТЭК",
+    "url": "https://www.novatek.ru/ru/investors/results/",
+    "kind": "ir",
+    "external": true
+  },
+  "PHOR": {
+    "title": "Презентации — ФосАгро",
+    "url": "https://www.phosagro.ru/investors/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "PLZL": {
+    "title": "Презентации — Полюс",
+    "url": "https://polyus.com/ru/investors/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "ROSN": {
+    "title": "Отчетность, презентации и годовые отчеты — Роснефть",
+    "url": "https://www.rosneft.ru/Investors/statements_and_presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "RTKM": {
+    "title": "Презентации — Ростелеком",
+    "url": "https://www.company.rt.ru/ir/results_and_presentations/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "RUAL": {
+    "title": "Обзор результатов — РУСАЛ",
+    "url": "https://rusal.ru/investors/financial-stat/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "TATN": {
+    "title": "Презентации для инвесторов — Татнефть (архив)",
+    "url": "https://old.tatneft.ru/aktsioneram-i-investoram/raskritie-informatsii/prezentatsii-dlya-investorov/?lang=ru",
+    "kind": "ir",
+    "external": true
+  },
+  "T": {
+    "title": "Финансовые результаты и презентации — Т-Технологии",
+    "url": "https://t-technologies.ru/results/",
+    "kind": "ir",
+    "external": true
+  },
+  "X5": {
+    "title": "Презентации — X5",
+    "url": "https://www.x5.ru/ru/investors/presentations/",
+    "kind": "ir",
+    "external": true
+  },
+  "YDEX": {
+    "title": "Финансовые результаты и презентации — Яндекс",
+    "url": "https://ir.yandex.ru/financial-releases",
+    "kind": "ir",
+    "external": true
+  },
+  "UGLD": {
+    "title": "Результаты и материалы для инвесторов — ЮГК",
+    "url": "https://ugold.ru/invest",
+    "kind": "ir",
+    "external": true
+  },
+  "POSI": {
+    "title": "Отчеты и результаты — Группа Позитив",
+    "url": "https://group.ptsecurity.com/ru/investors/reports-and-results",
+    "kind": "ir",
+    "external": true
+  },
+  "VKCO": {
+    "title": "Отчеты и материалы — VK",
+    "url": "https://vk.company.ru/ru/investors/results/",
+    "kind": "ir",
+    "external": true
+  },
+  "RAGR": {
+    "title": "Презентации — Русагро",
+    "url": "https://www.rusagrogroup.ru/ru/investoram/otchety-i-publikacii/prezentacii/",
+    "kind": "ir",
+    "external": true
+  }
+}
